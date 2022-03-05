@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &757580268434758886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6961511050162730167}
+  - component: {fileID: 958213980021157610}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6961511050162730167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757580268434758886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &958213980021157610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757580268434758886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c683a430603e3274c83471de3a11cb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Soundtracks:
+  - m_Name: BGM
+    m_Clip: {fileID: 8300000, guid: 265b17c72cd3ebb4cb4234175d34424a, type: 3}
+    m_Volume: 0.2
+    m_Loop: 1
+    m_Source: {fileID: 0}
+  - m_Name: Accel
+    m_Clip: {fileID: 8300000, guid: 881c1a80d9c4e80499797a7f7fb374d9, type: 3}
+    m_Volume: 0.2
+    m_Loop: 0
+    m_Source: {fileID: 0}
+  - m_Name: Coin
+    m_Clip: {fileID: 8300000, guid: e18a4b0c57436b64cac245f360f07694, type: 3}
+    m_Volume: 0.2
+    m_Loop: 0
+    m_Source: {fileID: 0}
+  - m_Name: Running
+    m_Clip: {fileID: 8300000, guid: fd1921125ee1c2a48b221938fc01e719, type: 3}
+    m_Volume: 0.2
+    m_Loop: 1
+    m_Source: {fileID: 0}
+  m_Volume: 1
