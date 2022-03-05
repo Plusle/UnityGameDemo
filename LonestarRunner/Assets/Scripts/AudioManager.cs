@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour {
     [SerializeField]
     private Soundtrack[] m_Soundtracks;
 
-    public float m_Volume = 1f;
+    public float m_Volume;
 
     private void Awake() {
         if (instance == null) {
@@ -19,12 +19,14 @@ public class AudioManager : MonoBehaviour {
             return;
         }
 
+        m_Volume = 0.2f;
+
         DontDestroyOnLoad(gameObject);
 
         foreach (Soundtrack track in m_Soundtracks) {
             track.m_Source = gameObject.AddComponent<AudioSource>();
             track.m_Source.clip = track.m_Clip;
-            track.m_Source.volume = track.m_Volume * m_Volume;
+            track.m_Source.volume = m_Volume;
             track.m_Source.loop = track.m_Loop;
         }
 
@@ -47,15 +49,15 @@ public class AudioManager : MonoBehaviour {
     }
 
     private void Update() {
-        foreach (var track in m_Soundtracks) {
-            track.m_Source.volume = track.m_Volume * m_Volume;
+        foreach (var source in GetComponents<AudioSource>()) {
+            source.volume = m_Volume;
         }
     }
 
     public void Stop(string name) {
         var sound = Array.Find(m_Soundtracks, s => s.m_Name == name); 
         if (sound == null) {
-            Debug.Log("Sound " + name + "doesn't exist");
+            Debug.LogWarning("Sound " + name + "doesn't exist");
             return;
         }
         sound.m_Source.Stop();
@@ -64,7 +66,7 @@ public class AudioManager : MonoBehaviour {
     public void Play(string name) {
         var sound = Array.Find(m_Soundtracks, s => s.m_Name == name);
         if (sound == null) {
-            Debug.Log("Sound " + name + "doesn't exist");
+            Debug.LogWarning("Sound " + name + "doesn't exist");
             return;
         }
         sound.m_Source.Play();
