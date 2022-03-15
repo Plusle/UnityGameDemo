@@ -43,9 +43,10 @@ public class GroundTile : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
-        if (other.gameObject.name != "Player") return;
-        m_Spawner.SpawnTile(true);
-        Destroy(gameObject, 2.0f);
+        if (other.gameObject.name == "Player") {
+            m_Spawner.SpawnTile(true);
+            Destroy(gameObject, 2.0f);
+        }
     }
 
     public void SpawnObstacle() {

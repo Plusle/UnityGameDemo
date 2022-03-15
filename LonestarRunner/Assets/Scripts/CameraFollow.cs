@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour {
     private Vector3 m_Offset;
 
     private void Start() {
+        m_Player = FindObjectOfType<Player>();
         m_Offset = transform.position - m_Player.transform.position;
     }
 

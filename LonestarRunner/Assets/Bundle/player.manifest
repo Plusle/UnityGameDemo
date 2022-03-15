@@ -1,0 +1,94 @@
+ManifestFileVersion: 0
+CRC: 675749820
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e0862af7877bdafc6f9ea1f2fd0ba9a4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a9b21d3a5f8a18c1d6c630c24472e114
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: af5495f59ff5e0e41a1ca158b57c4a5c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f944ffdb951c04641a1f4381d60cc9eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1692a52df2f43e44fa238860ac72f8d5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d6e42a50c84775741aec773dd7c7d8e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5ba2c789285975849be1420ddd66ec12, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1f3339790032eb3449a0186036a06f3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9efd058a8fcf0ca4a854f67147263dbd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d8480c1a4760d884c80eed0ce476dbcb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputAction
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputActionMap
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputBinding
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputControlScheme
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/DeviceLostEvent
+- AssemblyName: Unity.InputSystem
+  ClassName: UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+Assets:
+- Assets/Meshes/PlayerAnimatorController.controller
+- Assets/Prefabs/LogicalObject/Enemy.prefab
+- Assets/Meshes/human.fbx
+- Assets/Prefabs/LogicalObject/Player.prefab
+Dependencies: []

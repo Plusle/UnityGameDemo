@@ -9,12 +9,6 @@ public class Coin : MonoBehaviour {
     [SerializeField]
     private LayerMask m_Standalone;
 
-    private void Start() {
-        //if (Physics.OverlapSphere(transform.position, 0.3f, m_Standalone).Length != 1) {
-        //    Destroy(gameObject);
-        //}
-    }
-
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == 6 /* 6. Player */) {
             Destroy(gameObject);

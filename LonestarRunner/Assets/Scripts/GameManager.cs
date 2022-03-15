@@ -21,10 +21,15 @@ public class GameManager : MonoBehaviour {
     private Player m_Player;
 
     [SerializeField]
-    private GameObject m_Enemy;
+    private Enemy m_Enemy;
 
     [SerializeField]
     private GameObject m_EndGameMenu;
+
+    private void Start() {
+        m_Player = FindObjectOfType<Player>();
+        m_Enemy = FindObjectOfType<Enemy>();
+    }
 
     public void ScoreIncrement() {
         m_Score++;
@@ -36,7 +41,7 @@ public class GameManager : MonoBehaviour {
         if (!m_Ended) {
             //m_EndGameMenu.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Score: " + m_Score;
             m_MenuScoreText.text = "Score: " + m_Score;
-            m_Enemy.SetActive(false);
+            m_Enemy.gameObject.SetActive(false);
             m_ScoreText.SetActive(false);
             m_EndGameMenu.SetActive(true);
             m_Ended = true;
